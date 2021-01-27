@@ -2,7 +2,7 @@
 Quickly Sanitize user data
 
 <p align="center">
-  <i><u>v1.1</u></i>
+  <i><u>v1.0.0</u></i>
   <br><br>
     <a href="https://github.com/PuneetGopinath/Sanitizers/issues/new?template=bug_report.md">Report bug</a> • 
     <a href="https://github.com/PuneetGopinath/Sanitizers/issues/new?template=feature_request.md">Request feature</a>
