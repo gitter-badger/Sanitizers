@@ -1,0 +1,27 @@
+{
+  "name": "Sanitizers",
+  "description": "Quickly Sanitize user input",
+  "version": "v1.1",
+  "license": "MIT",
+  "homepage": "https://github.com/PuneetGopinath/Sanitizers#readme",
+  "config": {
+    "version_short": "1"
+  },
+  "keywords": [
+    "Sanitizers",
+    "Sanitize",
+    "PHP Sanitizers",
+    "Sanitize user input"
+  ],
+  "files": [
+    "src/*.php"
+  ],
+  "author": "Puneet Gopinath",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PuneetGopinath/Sanitizers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PuneetGopinath/Sanitizers/issues"
+  }
+}

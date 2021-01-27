@@ -1,0 +1,6 @@
+# Ignore examples folder
+/examples/
+
+# Ignore error and logs files
+*.err
+*.log
