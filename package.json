@@ -1,11 +1,11 @@
 {
   "name": "Sanitizers",
   "description": "Quickly Sanitize user input",
-  "version": "v1.1",
+  "version": "v1.0.0",
   "license": "MIT",
   "homepage": "https://github.com/PuneetGopinath/Sanitizers#readme",
   "config": {
-    "version_short": "1"
+    "version_short": "1.0"
   },
   "keywords": [
     "Sanitizers",
