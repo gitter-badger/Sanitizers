@@ -7,7 +7,8 @@ class Sanitizer {
 
     public function __construct()
     {
-        $this->maxInputLength = $config['maxInputLength'];
+        $this->maxInputLength = $config['maxInputLength'] || 100;
+        $this->encoding = $config['encoding'] || "UTF-8";
     }
 
     private function clean($text)
@@ -15,7 +16,7 @@ class Sanitizer {
         if (strlen($text) > $this->maxInputLength) {
             $text = substr($text, 0, $this->maxInputLength);
         }
-        $text = trim($text);
+        $text = trim(htmlspecialchars($text, $flags=ENT_QUOTES | ENT_SUBSTITUTE, $this->encoding));
         return $text;
     }
 
