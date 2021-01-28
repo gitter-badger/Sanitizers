@@ -37,20 +37,8 @@ Example Usage in php:
     echo $sanitize->Username($_GET['username']);
     ?>
 
-## PHP Support
-#### Versions Which have no problem - 5.0.0 - 5.0.5, 5.1.0 - 5.1.6, 5.2.0 - 5.2.17, 5.3.0 - 5.3.29, 5.4.0 - 5.4.45, 5.5.0 - 5.5.38, 5.6.0 - 5.6.40, 7.0.0 - 7.0.33, 7.1.0 - 7.1.33, 7.2.0 - 7.2.34, 7.3.0 - 7.3.26, 7.4.0 - 7.4.14, 8.0.0 - 8.0.1
-
-#### Output for 4.4.2 - 4.4.9
-    Parse error: syntax error, unexpected T_STRING, expecting T_OLD_FUNCTION or T_FUNCTION or T_VAR or '}' in /in/eQP7g on line 8
-    Process exited with code 255.
-
-#### Output for 4.3.0 - 4.3.1, 4.3.5 - 4.3.11, 4.4.0 - 4.4.1
-    Parse error: parse error, unexpected T_STRING, expecting T_OLD_FUNCTION or T_FUNCTION or T_VAR or '}' in /in/eQP7g on line 8
-    Process exited with code 255.
-
-#### Output for 4.3.2 - 4.3.4
-    Parse error: parse error, expecting `T_OLD_FUNCTION' or `T_FUNCTION' or `T_VAR' or `'}'' in /in/eQP7g on line 8
-    Process exited with code 255.
+## PHP Versions Support
+These are versions Which currently support... 7.3.0 - 7.3.26, 7.4.0 - 7.4.14, 8.0.0 - 8.0.1
 
 ## Contributing
 See the [CONTRIBUTING.md](https://github.com/PuneetGopinath/Sanitizers/tree/main/.github/CONTRIBUTING.md) file for more info.
