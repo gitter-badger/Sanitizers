@@ -51,7 +51,7 @@ class Sanitizer {
 
     public function Username($username)
     {
-        $username = $this->clean(preg_replace("/[^a-z0-9]/s", "", $this->Text(strtolower($username)));
+        $username = $this->clean(preg_replace("/[^a-z0-9]/s", "", $this->Text(strtolower($username))));
         return $username;
     }
 
