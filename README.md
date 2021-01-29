@@ -42,3 +42,6 @@ These are versions Which currently support... 7.3.0 - 7.3.26, 7.4.0 - 7.4.14, 8.
 
 ## Contributing
 See the [CONTRIBUTING.md](https://github.com/PuneetGopinath/Sanitizers/tree/main/.github/CONTRIBUTING.md) file for more info.
+
+## NOTES
+If you don't understand our code see [NOTES.md](https://github.com/PuneetGopinath/Sanitizers/blob/main/NOTES.md) file
