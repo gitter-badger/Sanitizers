@@ -1,5 +1,5 @@
 <?php
-require("Sanitizers.php");
+include("Sanitizers.php");
 
 if (isset($_POST['Submit']))
 {
