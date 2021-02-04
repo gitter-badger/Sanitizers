@@ -2,32 +2,54 @@
 /**
  * Copyright (c) 2021 The BaalKrshna Team
  * 
- * PHP Sanitizers
- * See https://github.com/PuneetGopinath/Sanitizers
+ * PHP Sanitizers - Quickly Sanitize user data
+ * @see https://github.com/PuneetGopinath/Sanitizers
  */
 
-include(dirname(__FILE__) . "/config.php");
+namespace Sanitizers\Sanitizers;
+
+$config_file = dirname(__FILE__) . "/config.php";
+if (is_readable($config_file)) {
+    include_once($config_file);
+} else {
+    error_log("PHP Sanitizers config file not found. Used fallback values, Time: " . time(), 0);
+}
+
 class Sanitizer {
 
     private $encoding;
     private $maxInputLength;
     private $charsets;
-    public function __construct()
+    public function __construct($exceptions=null)
     {
-        $charsets = ["ISO-8859-1","ISO8859-1","ISO-8859-5","ISO8859-5","ISO-8859-15","ISO8859-15","UTF-8","cp866","ibm866","866","cp1251","Windows-1251","win-1251","1251","cp1252","Windows-1252","1252","KOI8-R","koi8-ru","koi8r","BIG5","950","GB2312","936","BIG5-HKSCS","Shift_JIS","SJIS","SJIS-win","cp932","932","EUC-JP","EUCJP","eucJP-win","MacRoman","",null];
-        $this->maxInputLength = (int)$config['maxInputLength'] || 100;
-        $this->encoding = (string)$config['encoding'] || "UTF-8";
-        if (!array_key_exists($this->encoding, array_values($charsets))) {
+        if (null !== $exceptions || false !== $exceptions) {
+            $this->exceptions = (bool) $exceptions;
+        }
+        $this->charsets = ["ISO-8859-1","ISO8859-1","ISO-8859-5","ISO8859-5","ISO-8859-15","ISO8859-15","UTF-8","cp866","ibm866","866","cp1251","Windows-1251","win-1251","1251","cp1252","Windows-1252","1252","KOI8-R","koi8-ru","koi8r","BIG5","950","GB2312","936","BIG5-HKSCS","Shift_JIS","SJIS","SJIS-win","cp932","932","EUC-JP","EUCJP","eucJP-win","MacRoman","",null];
+        if (!isset($config) || empty($config)) {// (fallback values) If config.php file is not found in the same directory or not readable then it will use these values
+            $config = [
+                "maxInputLength" => 1000,
+                "encoding" => "UTF-8"
+            ];
+        }
+        $this->maxInputLength = (int)$config["maxInputLength"];
+        $this->encoding = (string)$config["encoding"];
+        if (!array_key_exists($this->encoding, array_values($this->charsets))) {
             $this->encoding = "";
+            if ($this->exceptions) {
+                throw new \Exception("Sanitizers: Invalid encoding: " . $config["encoding"]);
+            }
         }
     }
 
-    private function clean($text, $maxInputLength)
+    public function clean($text, $trim=true)
     {
         if (strlen($text) > $this->maxInputLength) {
             $text = substr($text, 0, $this->maxInputLength);
         }
-        $text = trim(htmlspecialchars($text, /*flags=*/ENT_QUOTES | ENT_SUBSTITUTE, $this->encoding));
+        $text = htmlspecialchars($text, /*flags=*/ENT_QUOTES | ENT_SUBSTITUTE, $this->encoding);
+        if ($trim)
+            $text = trim($text);
         return $text;
     }
 
@@ -81,7 +103,7 @@ class Sanitizer {
 
     public function URL($url)
     {
-        $url = $this->clean(filter_var($url, FILTER_SANITIZE_URL));
+        $url = filter_var($url, FILTER_SANITIZE_URL);
         return $url;
     }
 }
