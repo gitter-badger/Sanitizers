@@ -9,14 +9,16 @@
   },
   "keywords": [
     "Sanitizers",
+    "back-end",
     "Sanitize",
+    "web",
     "PHP Sanitizers",
     "Sanitize user input"
   ],
   "files": [
     "src/*.php"
   ],
-  "author": "Puneet Gopinath",
+  "author": "The Sanitizers Authors (https://github.com/PuneetGopinath/Sanitizers/graphs/contributors)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PuneetGopinath/Sanitizers.git"
