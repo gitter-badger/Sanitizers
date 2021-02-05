@@ -4,3 +4,7 @@
 # Ignore error and logs files
 *.err
 *.log
+
+# Ignore Composer created files
+composer.phar
+/vendor/

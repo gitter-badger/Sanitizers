@@ -1,7 +1,6 @@
 # Notes
 
-If you Don't understand our code...
-You can see the examples in this file to understand our code
+You can see the examples in this file to understand our code.
 
 ## PHP Sanitize Flags
 
@@ -16,4 +15,4 @@ See PHP flags official documentation in [php.net](http://php.net/manual/en/filte
 
 ## Important Note
 
-The file you are using (or the file from where you are including Sanitizers.php) should contain the file **config.php** in the same directory.
+The file from where you are including **Sanitizers.php** should contain the file **config.php** in the directory where **Sanitizers.php** exists.

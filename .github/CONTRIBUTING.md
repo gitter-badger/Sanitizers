@@ -5,7 +5,7 @@ Looking to contribute us? _**Here's how we can help.**_
 ## Issues
 
 You can Report bug(s) and Request feature(s) in the Issues section<br>
-<a href="https://github.com/PuneetGopinath/Sanitizers/issues/new?template=bug_report.md">Report bug</a><p>Or</p>
+<a href="https://github.com/PuneetGopinath/Sanitizers/issues/new?template=bug_report.md">Report bug</a><p align="center">OR</p>
 <a href="https://github.com/PuneetGopinath/Sanitizers/issues/new?template=feature_request.md">Request feature</a><br>
 And submit pull requests to contribute us...
 

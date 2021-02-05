@@ -2,7 +2,7 @@
   "name": "sanitizers/sanitizers",
   "description": "Quickly Sanitize user input",
   "type": "library",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "license": "MIT",
   "homepage": "https://github.com/PuneetGopinath/Sanitizers#readme",
   "keywords": [
@@ -19,6 +19,9 @@
       "role": "developer"
     }
   ],
+  "scripts": {
+    "test": "@php test/SanitizersTest.php"
+  },
   "autoload": {
     "psr-4": {
         "Sanitizers\\Sanitizers\\": "src/"
@@ -33,9 +36,9 @@
       "type": "package",
       "package": {
         "name": "sanitizers/sanitizers",
-        "version": "v1.0.0",
+        "version": "v1.0.1",
         "dist": {
-          "url": "https://github.com/PuneetGopinath/Sanitizers/archive/v1.0.0.zip",
+          "url": "https://github.com/PuneetGopinath/Sanitizers/archive/v1.0.1.zip",
           "type": "zip"
         }
       }

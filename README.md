@@ -6,7 +6,7 @@
 
 <p align="center">
     Quickly Sanitize user data<br>
-    <i><u>v1.0.0</u></i>
+    <i><u>v1.0.1</u></i>
     <br><br>
     <a href="https://puneetgopinath.github.io/Sanitizers"><b>Explore Sanitizers Docs</b></a> &raquo;
     <br><br>&rArr;
@@ -24,7 +24,7 @@
 
 <h2><a name="quick-start">Quick Start</a></h2>
 
-- [Download the latest version](https://github.com/PuneetGopinath/Sanitizers/archive/v1.0.0.zip)
+- [Download the latest version](https://github.com/PuneetGopinath/Sanitizers/archive/v1.0.1.zip)
 
 - #### Clone the repo:
 `git clone https://github.com/PuneetGopinath/Sanitizers.git`
@@ -39,9 +39,9 @@ Example Usage in php:
 
 ```
 <?php
-use Sanitizers\Sanitizers\Sanitizer;
-
 require_once("Sanitizers.php");
+
+use Sanitizers\Sanitizers\Sanitizer;
 
 \\ passing `true` in Sanitizer class enables exceptions
 $sanitize = new Sanitizer(true);

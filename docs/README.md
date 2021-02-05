@@ -1,7 +1,9 @@
 # Sanitizers Docs
 
+<p align="center"><i><u>v1.0.1</u></i></p><br>
+
 First require the **Sanitizers.php** file.<br>
-**Note:** the file from where you are including **Sanitizers.php** should contain the file **config.php** in the same directory.
+**Note:** the file from where you are including **Sanitizers.php** should contain the file **config.php** in the directory where **Sanitizers.php** exists.
 
 And replace **path/to/Sanitizers.php** with path to **Sanitizers.php** file.
 

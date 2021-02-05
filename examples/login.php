@@ -1,5 +1,6 @@
 <?php
 require_once("Sanitizers.php");
+use Sanitizers\Sanitizers\Sanitizer;
 
 if (isset($_POST['Submit']))
 {
