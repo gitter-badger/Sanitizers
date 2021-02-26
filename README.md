@@ -74,7 +74,7 @@ Sanitizers/
 [![GitHub top language](https://img.shields.io/github/languages/top/PuneetGopinath/Sanitizers)]()
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/PuneetGopinath/Sanitizers)]()
 [![GitHub language count](https://img.shields.io/github/languages/count/PuneetGopinath/Sanitizers)]()
-[![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/PuneetGopinath/Sanitizers)]()
+[![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/PuneetGopinath/Sanitizers)]() [![Join the chat at https://gitter.im/BaalKrshna/Sanitizers](https://badges.gitter.im/BaalKrshna/Sanitizers.svg)](https://gitter.im/BaalKrshna/Sanitizers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/PuneetGopinath/Sanitizers)
 
 <h2><a name="php">PHP Support</a></h2>
